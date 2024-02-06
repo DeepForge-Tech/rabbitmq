@@ -5,7 +5,7 @@ const amqp = require('amqplib');
 // const io = require('socket.io')(server);
 var channel;
 
-amqp.connect("amqp://guest:guest@rabbitmq-0g41.onrender.com")
+amqp.connect("amqp://guest:guest@localhost")
     .then((connection) => connection.createChannel())
     .then((_channel) => {
         channel = _channel;
